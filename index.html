@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Droneonthefarm - Agricultural Drone Mapping Services</title>
+    <meta name="description" content="Professional agricultural drone mapping services in the UK. Precision agriculture solutions using advanced drone technology for mapping, surveying, and crop analysis.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%234a7c59" width="1200" height="600"/><circle fill="%23ffffff" opacity="0.1" cx="200" cy="150" r="80"/><circle fill="%23ffffff" opacity="0.1" cx="800" cy="300" r="120"/><circle fill="%23ffffff" opacity="0.1" cx="1000" cy="100" r="60"/></svg>');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .brand {
+            font-size: 1.5rem;
+            color: #4ade80;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            max-width: 800px;
+            color: #e5e7eb;
+            font-weight: 300;
+        }
+
+        .contact-cta {
+            background: rgba(74, 222, 128, 0.2);
+            border: 2px solid #4ade80;
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            max-width: 600px;
+            margin-top: 20px;
+        }
+
+        .contact-cta h3 {
+            color: #4ade80;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            text-align: left;
+        }
+
+        .contact-item {
+            color: #e5e7eb;
+            font-size: 1rem;
+        }
+
+        .contact-item strong {
+            color: #4ade80;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 80px 20px;
+            background: #f8fafc;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #1e293b;
+            margin-bottom: 60px;
+            font-weight: 700;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 4px solid #4ade80;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: #4ade80;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 24px;
+            color: white;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            color: #1e293b;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .service-card p {
+            color: #64748b;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .service-quote {
+            font-style: italic;
+            color: #4ade80;
+            font-size: 0.9rem;
+            margin-top: 15px;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #2d5016 0%, #4a7c59 100%);
+            color: white;
+        }
+
+        .gallery-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 60px;
+            font-weight: 700;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery-item {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Footer */
+        .footer {
+            background: #1e293b;
+            color: white;
+            padding: 60px 20px 30px;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            color: #4ade80;
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+
+        .footer-section p, .footer-section li {
+            color: #cbd5e1;
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #334155;
+            padding-top: 20px;
+            color: #94a3b8;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .contact-info {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .service-card {
+                padding: 30px 20px;
+            }
+        }
+
+        /* Certifications Section */
+        .certifications {
+            background: #f1f5f9;
+            padding: 40px 20px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .certifications-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .certifications h3 {
+            color: #1e293b;
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        .certifications-grid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .cert-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .cert-item:hover {
+            opacity: 1;
+        }
+
+        .cert-icon {
+            width: 50px;
+            height: 50px;
+            background: #4ade80;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .cert-label {
+            font-size: 0.8rem;
+            color: #64748b;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            .certifications-grid {
+                gap: 25px;
+            }
+            
+            .cert-icon {
+                width: 45px;
+                height: 45px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="brand">Droneonthefarm</div>
+        <h1 class="hero-title">Agricultural Drone Mapping Services</h1>
+        <p class="hero-subtitle">
+            Precision agriculture solutions using advanced drone technology for mapping, surveying, and crop analysis
+        </p>
+        
+        <div class="contact-cta">
+            <h3>Get in Touch for Professional Drone Services</h3>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>Email:</strong> droneonthefarm@outlook.com
+                </div>
+                <div class="contact-item">
+                    <strong>Mobile:</strong> 07771190394
+                </div>
+                <div class="contact-item">
+                    <strong>YouTube:</strong> @jonnywipeout
+                </div>
+                <div class="contact-item">
+                    <strong>Service Area:</strong> UK Wide
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Our Agricultural Drone Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📍</div>
+                    <h3>Field Mapping</h3>
+                    <p>Comprehensive aerial mapping of agricultural fields for precise planning and analysis</p>
+                    <div class="service-quote">"Creating detailed digital maps from above"</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>AEC Progress Reports</h3>
+                    <p>Comprehensive aerial documentation for construction and field projects, providing detailed progress reports for AEC professionals</p>
+                    <div class="service-quote">"Tracking progress from above"</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🗺️</div>
+                    <h3>3D Mapping & Orthomosaics</h3>
+                    <p>High-resolution 2D orthomosaic maps and detailed 3D field models for comprehensive spatial analysis and planning</p>
+                    <div class="service-quote">"Transforming fields into digital twins"</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <h2 class="gallery-title">Agricultural Drone Imagery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="/placeholder.svg?height=250&width=400&text=Aerial+Field+Mapping" alt="Aerial field mapping showing crop patterns and field boundaries">
+                </div>
+                <div class="gallery-item">
+                    <img src="/placeholder.svg?height=250&width=400&text=Drone+Technology" alt="Professional agricultural drone equipment in field setting">
+                </div>
+                <div class="gallery-item">
+                    <img src="/placeholder.svg?height=250&width=400&text=Precision+Agriculture" alt="Precision agriculture technology and field analysis">
+                </div>
+                <div class="gallery-item">
+                    <img src="/placeholder.svg?height=250&width=400&text=3D+Field+Models" alt="3D field models and orthomosaic mapping results">
+                </div>
+                <div class="gallery-item">
+                    <img src="/placeholder.svg?height=250&width=400&text=Crop+Analysis" alt="Detailed crop analysis and health monitoring from aerial perspective">
+                </div>
+                <div class="gallery-item">
+                    <img src="/placeholder.svg?height=250&width=400&text=Field+Surveying" alt="Professional field surveying and mapping operations">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications">
+        <div class="certifications-container">
+            <h3>Certified & Compliant UAV Operations</h3>
+            <div class="certifications-grid">
+                <div class="cert-item">
+                    <div class="cert-icon">✈️</div>
+                    <div class="cert-label">CAA Approved</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-icon">🎓</div>
+                    <div class="cert-label">A2 CofC</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-icon">🏢</div>
+                    <div class="cert-label">Commercial Insurance</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-icon">🛡️</div>
+                    <div class="cert-label">Public Liability</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Information</h3>
+                <p><strong>Email:</strong> droneonthefarm@outlook.com</p>
+                <p><strong>Mobile:</strong> 07771190394</p>
+                <p><strong>YouTube:</strong> @jonnywipeout</p>
+                <p><strong>Service Area:</strong> United Kingdom</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Our Services</h3>
+                <ul>
+                    <li>Agricultural Field Mapping</li>
+                    <li>AEC Progress Documentation</li>
+                    <li>3D Mapping & Orthomosaics</li>
+                    <li>Crop Health Analysis</li>
+                    <li>Precision Agriculture Solutions</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>About Droneonthefarm</h3>
+                <p>Professional UAV drone mapping and surveying services across the UK. Specializing in precision agriculture solutions using advanced drone technology for comprehensive field analysis and documentation.</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Droneonthefarm. All rights reserved. | UAV Drone Mapping and Surveying in the UK</p>
+        </div>
+    </footer>
+</body>
+</html>
