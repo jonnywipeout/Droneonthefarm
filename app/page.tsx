@@ -227,7 +227,7 @@ export default function AgricultureDroneLandingPage() {
               <p>Mobile: 07771190394</p>
               <div className="mt-4">
                 <a
-                  href="insert customer link here!!"
+                  href="Your Map site link 🗺️"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-green-400 hover:text-green-300 transition-colors"
