@@ -41,7 +41,6 @@ export default function AgricultureDroneLandingPage() {
     <div className="min-h-screen bg-gradient-to-b from-green-50 to-slate-100">
       {/* Hero Section */}
       <section className="relative h-[500px] overflow-hidden">
-        {/* Hero Background */}
         <div className="absolute inset-0">
           <Image
             src="/images/drone-landscape.jpeg"
@@ -52,11 +51,7 @@ export default function AgricultureDroneLandingPage() {
             priority
           />
         </div>
-
-        {/* Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/40" />
-
-        {/* Content */}
         <div className="relative z-10 container mx-auto px-4 h-full flex flex-col justify-center items-center text-center">
           <h1 className="text-2xl md:text-3xl font-bold text-green-400 mb-4 tracking-wide">Droneonthefarm</h1>
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">
@@ -69,7 +64,7 @@ export default function AgricultureDroneLandingPage() {
             <p className="text-gray-500 mb-2 text-sm">Visit your map site here :</p>
             <div className="flex items-center justify-center gap-2 flex-wrap">
               <a
-                href="#"
+                href="https://cloud1.webodm.net/public/project/dcb728c6-5b16-4e7e-875d-59119584aa9f/map/?t=orthophoto"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-green-700 font-medium text-lg md:text-xl hover:text-green-800 transition-colors flex items-center gap-1 break-all"
@@ -176,7 +171,7 @@ export default function AgricultureDroneLandingPage() {
             Visit our interactive agricultural drone mapping site for comprehensive field analysis and insights
           </p>
           <Link
-            href="#"
+            href="https://cloud1.webodm.net/public/project/dcb728c6-5b16-4e7e-875d-59119584aa9f/map/?t=orthophoto"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white text-lg px-8 py-6 rounded-lg shadow-lg transition-colors duration-200 no-underline font-medium"
@@ -227,7 +222,7 @@ export default function AgricultureDroneLandingPage() {
               <p>Mobile: 07771190394</p>
               <div className="mt-4">
                 <a
-                  href="#"
+                  href="https://cloud1.webodm.net/public/project/dcb728c6-5b16-4e7e-875d-59119584aa9f/map/?t=orthophoto"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-green-400 hover:text-green-300 transition-colors"
@@ -236,10 +231,6 @@ export default function AgricultureDroneLandingPage() {
                 </a>
               </div>
             </div>
-          </div>
-
-          <div className="mt-8 pt-8 border-t border-slate-700 text-center text-slate-400 text-sm">
-            <p>© {new Date().getFullYear()} Agricultural Drone Services. All rights reserved.</p>
           </div>
         </div>
       </footer>
