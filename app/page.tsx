@@ -66,15 +66,15 @@ export default function AgricultureDroneLandingPage() {
             Precision agriculture solutions using advanced drone technology for mapping, surveying, and crop analysis
           </p>
           <div className="bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-lg border border-green-200 max-w-xl w-full">
-            <p className="text-gray-500 mb-2 text-sm">Visit our detailed mapping portal:</p>
+            <p className="text-gray-500 mb-2 text-sm">Visit your map site here :</p>
             <div className="flex items-center justify-center gap-2 flex-wrap">
               <a
-                href="https://musical-narwhal-2ed924.netlify.app/"
+                href="https://www.yourmapsite.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-green-700 font-medium text-lg md:text-xl hover:text-green-800 transition-colors flex items-center gap-1 break-all"
               >
-                musical-narwhal-2ed924.netlify.app <ExternalLink className="w-4 h-4" />
+                www.yourmapsite.com <ExternalLink className="w-4 h-4" />
               </a>
             </div>
           </div>
