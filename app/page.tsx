@@ -69,12 +69,12 @@ export default function AgricultureDroneLandingPage() {
             <p className="text-gray-500 mb-2 text-sm">Visit your map site here :</p>
             <div className="flex items-center justify-center gap-2 flex-wrap">
               <a
-                href="https://www.yourmapsite.com"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-green-700 font-medium text-lg md:text-xl hover:text-green-800 transition-colors flex items-center gap-1 break-all"
               >
-                www.yourmapsite.com <ExternalLink className="w-4 h-4" />
+               # <ExternalLink className="w-4 h-4" />
               </a>
             </div>
           </div>
@@ -176,12 +176,12 @@ export default function AgricultureDroneLandingPage() {
             Visit our interactive agricultural drone mapping site for comprehensive field analysis and insights
           </p>
           <Link
-            href="https://musical-narwhal-2ed924.netlify.app/"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white text-lg px-8 py-6 rounded-lg shadow-lg transition-colors duration-200 no-underline font-medium"
           >
-            Visit Mapping Portal <ArrowRight className="w-5 h-5" />
+           # <ArrowRight className="w-5 h-5" />
           </Link>
         </div>
       </section>
@@ -232,7 +232,7 @@ export default function AgricultureDroneLandingPage() {
                   rel="noopener noreferrer"
                   className="text-green-400 hover:text-green-300 transition-colors"
                 >
-                  Visit our mapping portal →
+                 #
                 </a>
               </div>
             </div>
