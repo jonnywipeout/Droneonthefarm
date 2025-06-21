@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
-import { ExternalLink, MapPin, DrillIcon as Drone, Leaf, ArrowRight } from "lucide-react"
+import { ExternalLink, MapPin, DrillIcon as Drone, Leaf, ArrowRight } from 'lucide-react'
 
 export default function AgricultureDroneLandingPage() {
   const galleryImages = [
@@ -69,12 +69,12 @@ export default function AgricultureDroneLandingPage() {
             <p className="text-gray-500 mb-2 text-sm">Visit your map site here :</p>
             <div className="flex items-center justify-center gap-2 flex-wrap">
               <a
-                href="Your Map site link 🗺️"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-green-700 font-medium text-lg md:text-xl hover:text-green-800 transition-colors flex items-center gap-1 break-all"
               >
-               Your Map site link 🗺️ <ExternalLink className="w-4 h-4" />
+                Your site map link 🗺️ <ExternalLink className="w-4 h-4" />
               </a>
             </div>
           </div>
@@ -176,12 +176,12 @@ export default function AgricultureDroneLandingPage() {
             Visit our interactive agricultural drone mapping site for comprehensive field analysis and insights
           </p>
           <Link
-            href="Your Map site link 🗺️"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white text-lg px-8 py-6 rounded-lg shadow-lg transition-colors duration-200 no-underline font-medium"
           >
-           Your Map site link 🗺️ <ArrowRight className="w-5 h-5" />
+            Your site map link 🗺️ <ArrowRight className="w-5 h-5" />
           </Link>
         </div>
       </section>
@@ -227,12 +227,12 @@ export default function AgricultureDroneLandingPage() {
               <p>Mobile: 07771190394</p>
               <div className="mt-4">
                 <a
-                  href="Your Map site link 🗺️"
+                  href="#"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-green-400 hover:text-green-300 transition-colors"
                 >
-                 Your Map site link 🗺️
+                  Your site map link 🗺️ →
                 </a>
               </div>
             </div>
