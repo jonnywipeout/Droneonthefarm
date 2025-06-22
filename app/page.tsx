@@ -82,60 +82,64 @@ export default function AgricultureDroneLandingPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-<Card className="border-green-200 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 transform">
-  <CardContent className="pt-6">
-    <div className="mb-4 flex justify-center">
-      <div className="p-3 bg-green-100 rounded-full">
-        <MapPin className="w-8 h-8 text-green-700" />
-      </div>
-    </div>
-    <h3 className="text-xl font-semibold text-center mb-2">Field Mapping</h3>
-    <p className="text-gray-600 text-center">
-      Comprehensive aerial mapping of agricultural fields for precise planning and analysis
-    </p>
-    <p className="text-green-700 text-center text-sm font-medium italic mt-2">
-      "Creating detailed digital maps from above"
-    </p>
-  </CardContent>
-</Card>
+          <Card className="border-green-200 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 transform">
+            <CardContent className="pt-6">
+              <div className="mb-4 flex justify-center">
+                <div className="p-3 bg-green-100 rounded-full">
+                  <MapPin className="w-8 h-8 text-green-700" />
+                </div>
+              </div>
+              <h3 className="text-xl font-semibold text-center mb-2">Field Mapping</h3>
+              <p className="text-gray-600 text-center">
+                Comprehensive aerial mapping of agricultural fields for precise planning and analysis
+              </p>
+              <p className="text-green-700 text-center text-sm font-medium italic mt-2">
+                "Creating detailed digital maps from above"
+              </p>
+            </CardContent>
+          </Card>
 
-<Card className="border-green-200 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 transform">
-  <CardContent className="pt-6">
-    <div className="mb-4 flex justify-center">
-      <div className="p-3 bg-green-100 rounded-full">
-        <Drone className="w-8 h-8 text-green-700" />
-      </div>
-    </div>
-    <h3 className="text-xl font-semibold text-center mb-2">AEC Progress Reports</h3>
-    <p className="text-gray-600 text-center">
-      Comprehensive aerial documentation for construction and field projects, providing detailed progress
-      reports for AEC professionals
-    </p>
-    <p className="text-green-700 text-center text-sm font-medium italic mt-2">
-      "Tracking progress from above"
-    </p>
-  </CardContent>
-</Card>
+          <Card className="border-green-200 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 transform">
+            <CardContent className="pt-6">
+              <div className="mb-4 flex justify-center">
+                <div className="p-3 bg-green-100 rounded-full">
+                  <Drone className="w-8 h-8 text-green-700" />
+                </div>
+              </div>
+              <h3 className="text-xl font-semibold text-center mb-2">AEC Progress Reports</h3>
+              <p className="text-gray-600 text-center">
+                Comprehensive aerial documentation for construction and field projects, providing detailed progress
+                reports for AEC professionals
+              </p>
+              <p className="text-green-700 text-center text-sm font-medium italic mt-2">
+                "Tracking progress from above"
+              </p>
+            </CardContent>
+          </Card>
 
-<Card className="border-green-200 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 transform">
-  <CardContent className="pt-6">
-    <div className="mb-4 flex justify-center">
-      <div className="p-3 bg-green-100 rounded-full">
-        <Leaf className="w-8 h-8 text-green-700" />
-      </div>
-    </div>
-    <h3 className="text-xl font-semibold text-center mb-2">3D Mapping & Orthomosaics</h3>
-    <p className="text-gray-600 text-center mb-3">
-      High-resolution 2D orthomosaic maps and detailed 3D field models for comprehensive spatial analysis and
-      planning
-    </p>
-    <p className="text-green-700 text-center text-sm font-medium italic">
-      "Transforming fields into digital twins"
-    </p>
-  </CardContent>
-</Card>
-
-</div>
+          <Card className="border-green-200 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 transform">
+            <CardContent className="pt-6">
+              <div className="mb-4 flex justify-center">
+                <div className="p-3 bg-green-100 rounded-full">
+                  <Leaf className="w-8 h-8 text-green-700" />
+                </div>
+              </div>
+              <h3 className="text-xl font-semibold text-center mb-2">3D Mapping & Orthomosaics</h3>
+              <p className="text-gray-600 text-center mb-3">
+                High-resolution 2D orthomosaic maps and detailed 3D field models for comprehensive spatial analysis and
+                planning
+              </p>
+              <p className="text-green-700 text-center text-sm font-medium italic">
+                "Transforming fields into digital twins"
+              </p>
+            </CardContent>
+          </Card>
+          <Card className="border-green-200 shadow-md hover:shadow-lg transition-shadow">
+            <CardContent className="pt-6">
+              <div className="mb-4 flex justify-center">
+                <div className="p-3 bg-green-100 rounded-full">
+                  <MapPin className="w-8 h-8 text-green-700" />
+                </div>
               </div>
               <h3 className="text-xl font-semibold text-center mb-2">Field Mapping</h3>
               <p className="text-gray-600 text-center">
