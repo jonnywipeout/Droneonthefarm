@@ -164,22 +164,29 @@ export default function AgricultureDroneLandingPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 container mx-auto px-4 bg-green-50 rounded-lg">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6 text-green-900">Ready to explore our detailed mapping portal?</h2>
-          <p className="text-lg text-green-700 mb-8">
-            Visit our interactive agricultural drone mapping site for comprehensive field analysis and insights
-          </p>
-          <Link
-            href="https://cloud1.webodm.net/public/project/4e49d3ba-0d40-4675-b241-cef29cdaf309/map/?t=orthophoto"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white text-lg px-8 py-6 rounded-lg shadow-lg transition-colors duration-200 no-underline font-medium"
-          >
-            Click to view test site 🗺️ <ArrowRight className="w-5 h-5" />
-          </Link>
-        </div>
-      </section>
+      <section
+  className="py-20 px-4 bg-center bg-cover bg-no-repeat text-white"
+  style={{
+    backgroundImage: "url('/images/potato-field-bg.jpg')",
+    backgroundBlendMode: "overlay",
+    backgroundColor: "rgba(0, 100, 0, 0.15)",
+  }}
+>
+  <div className="max-w-3xl mx-auto text-center">
+    <h2 className="text-3xl font-bold mb-6">Ready to explore our detailed mapping portal?</h2>
+    <p className="text-lg mb-8">
+      Visit our interactive agricultural drone mapping site for comprehensive field analysis and insights
+    </p>
+    <Link
+      href="https://cloud1.webodm.net/public/project/4e49d3ba-0d40-4675-b241-cef29cdaf309/map/?t=orthophoto"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white text-lg px-8 py-6 rounded-lg shadow-lg transition-colors duration-200 no-underline font-medium"
+    >
+      Click to view test site 🗺️ <ArrowRight className="w-5 h-5" />
+    </Link>
+  </div>
+</section>
 
       {/* Testimonial Section */}
       <section className="py-16 bg-slate-50">
