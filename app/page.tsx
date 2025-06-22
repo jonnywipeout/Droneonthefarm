@@ -217,8 +217,8 @@ export default function AgricultureDroneLandingPage() {
             </div>
 
             <div className="text-center md:text-right">
-              <p className="mb-2">Email: droneonthefarm@outlook.com</p>
-              <p className="mb-2">YouTube: @jonnywipeout</p>
+              <p className="mb-2">Email: <a href="mailto:droneonthefarm@outlook.com" className="text-green-400 hover:underline">droneonthefarm@outlook.com</a></p>
+              <p className="mb-2">YouTube: <a href="https://www.youtube.com/@jonnywipeout" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:underline">@jonnywipeout</a></p>
               <p>Mobile: 07771190394</p>
               <div className="mt-4">
                 <a
