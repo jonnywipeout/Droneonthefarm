@@ -64,7 +64,7 @@ export default function AgricultureDroneLandingPage() {
             <p className="text-gray-500 mb-2 text-sm">Visit your map site here :</p>
             <div className="flex items-center justify-center gap-2 flex-wrap">
               <a
-                href="https://cloud1.webodm.net/public/project/4e49d3ba-0d40-4675-b241-cef29cdaf309/map/?t=orthophoto"
+                href="https://cloud1.webodm.net/public/task/9bdb8ac1-2a01-4f4d-9b36-5912b229ff54/map/?t=orthophoto"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-green-700 font-medium text-lg md:text-xl hover:text-green-800 transition-colors flex items-center gap-1 break-all"
@@ -178,7 +178,7 @@ export default function AgricultureDroneLandingPage() {
       Visit our interactive agricultural drone mapping site for comprehensive field analysis and insights
     </p>
     <Link
-      href="https://cloud1.webodm.net/public/project/4e49d3ba-0d40-4675-b241-cef29cdaf309/map/?t=orthophoto"
+      href="https://cloud1.webodm.net/public/task/9bdb8ac1-2a01-4f4d-9b36-5912b229ff54/map/?t=orthophoto"
       target="_blank"
       rel="noopener noreferrer"
       className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-black text-lg px-8 py-6 rounded-lg shadow-lg transition-colors duration-200 no-underline font-medium"
@@ -236,7 +236,7 @@ export default function AgricultureDroneLandingPage() {
 
           <div className="mt-8 flex justify-center">
             <a
-              href="https://cloud1.webodm.net/public/project/4e49d3ba-0d40-4675-b241-cef29cdaf309/map/?t=orthophoto"
+              href="https://cloud1.webodm.net/public/task/9bdb8ac1-2a01-4f4d-9b36-5912b229ff54/map/?t=orthophoto"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-black px-6 py-3 rounded-md shadow-md text-lg transition"
