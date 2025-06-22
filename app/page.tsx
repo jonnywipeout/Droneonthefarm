@@ -169,7 +169,7 @@ export default function AgricultureDroneLandingPage() {
   style={{
     backgroundImage: "url('/images/potato-field-bg.jpg')",
     backgroundBlendMode: "overlay",
-    backgroundColor: "rgba(0, 100, 0, 0.3)",
+    backgroundColor: "rgba(0, 100, 0, 0.08)",
   }}
 >
   <div className="max-w-3xl mx-auto text-center">
