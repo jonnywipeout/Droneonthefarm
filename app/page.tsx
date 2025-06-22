@@ -54,7 +54,7 @@ export default function AgricultureDroneLandingPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/40" />
         <div className="relative z-10 container mx-auto px-4 h-full flex flex-col justify-center items-center text-center">
           <h1 className="text-2xl md:text-3xl font-bold text-green-400 mb-4 tracking-wide">Droneonthefarm</h1>
-          <h2 className="text-4xl md:text-6xl font-bold text-black mb-6 tracking-tight">
+          <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">
             Agricultural Drone Mapping Services
           </h2>
           <p className="text-xl text-green-100 max-w-2xl mb-8">
@@ -64,7 +64,7 @@ export default function AgricultureDroneLandingPage() {
             <p className="text-gray-500 mb-2 text-sm">Visit your map site here :</p>
             <div className="flex items-center justify-center gap-2 flex-wrap">
               <a
-                href="https://cloud1.webodm.net/public/task/9bdb8ac1-2a01-4f4d-9b36-5912b229ff54/map/?t=orthophoto"
+                href="https://cloud1.webodm.net/public/project/4e49d3ba-0d40-4675-b241-cef29cdaf309/map/?t=orthophoto"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-green-700 font-medium text-lg md:text-xl hover:text-green-800 transition-colors flex items-center gap-1 break-all"
@@ -139,7 +139,7 @@ export default function AgricultureDroneLandingPage() {
       {/* Image Gallery */}
       <section className="py-16 bg-green-900">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 text-black">Agricultural Drone Imagery</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-white">Agricultural Drone Imagery</h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {galleryImages.map((image, index) => (
@@ -154,7 +154,7 @@ export default function AgricultureDroneLandingPage() {
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
                   <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <p className="text-black text-sm font-medium">{image.title}</p>
+                    <p className="text-white text-sm font-medium">{image.title}</p>
                   </div>
                 </div>
               </div>
@@ -164,29 +164,22 @@ export default function AgricultureDroneLandingPage() {
       </section>
 
       {/* CTA Section */}
-      <section
-  className="py-20 px-4 bg-center bg-cover bg-no-repeat text-black"
-  style={{
-    backgroundImage: "url('/images/potato-field-bg.jpg')",
-    backgroundBlendMode: "overlay",
-    backgroundColor: "rgba(0, 100, 0, 0.08)",
-  }}
->
-  <div className="max-w-3xl mx-auto text-center">
-    <h2 className="text-2xl md:text-3xl font-bold mb-4">Ready to explore our detailed mapping portal?</h2>
-    <p className="text-xl font-semibold mb-10">
-      Visit our interactive agricultural drone mapping site for comprehensive field analysis and insights
-    </p>
-    <Link
-      href="https://cloud1.webodm.net/public/task/9bdb8ac1-2a01-4f4d-9b36-5912b229ff54/map/?t=orthophoto"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-black text-lg px-8 py-6 rounded-lg shadow-lg transition-colors duration-200 no-underline font-medium"
-    >
-      Click to view test site 🗺️ <ArrowRight className="w-5 h-5" />
-    </Link>
-  </div>
-</section>
+      <section className="py-16 container mx-auto px-4 bg-green-50 rounded-lg">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-6 text-green-900">Ready to explore our detailed mapping portal?</h2>
+          <p className="text-lg text-green-700 mb-8">
+            Visit our interactive agricultural drone mapping site for comprehensive field analysis and insights
+          </p>
+          <Link
+            href="https://cloud1.webodm.net/public/project/4e49d3ba-0d40-4675-b241-cef29cdaf309/map/?t=orthophoto"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white text-lg px-8 py-6 rounded-lg shadow-lg transition-colors duration-200 no-underline font-medium"
+          >
+            Click to view test site 🗺️ <ArrowRight className="w-5 h-5" />
+          </Link>
+        </div>
+      </section>
 
       {/* Testimonial Section */}
       <section className="py-16 bg-slate-50">
@@ -215,34 +208,29 @@ export default function AgricultureDroneLandingPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-800 text-black py-12">
+      <footer className="bg-slate-800 text-white py-12">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="mb-6 md:mb-0 text-center md:text-left">
+            <div className="mb-6 md:mb-0">
               <h3 className="text-2xl font-bold mb-2">Agricultural Drone Services</h3>
               <p className="text-slate-300">Professional UAV mapping and surveying in the UK</p>
             </div>
 
             <div className="text-center md:text-right">
-              <p className="mb-2">
-                Email: <a href="mailto:droneonthefarm@outlook.com" className="text-green-400 hover:underline">droneonthefarm@outlook.com</a>
-              </p>
-              <p className="mb-2">
-                YouTube: <a href="https://www.youtube.com/@jonnywipeout" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:underline">@jonnywipeout</a>
-              </p>
+              <p className="mb-2">Email: droneonthefarm@outlook.com</p>
+              <p className="mb-2">YouTube: @jonnywipeout</p>
               <p>Mobile: 07771190394</p>
+              <div className="mt-4">
+                <a
+                  href="https://cloud1.webodm.net/public/project/4e49d3ba-0d40-4675-b241-cef29cdaf309/map/?t=orthophoto"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-green-400 hover:text-green-300 transition-colors"
+                >
+                  Click to view test site 🗺️ →
+                </a>
+              </div>
             </div>
-          </div>
-
-          <div className="mt-8 flex justify-center">
-            <a
-              href="https://cloud1.webodm.net/public/task/9bdb8ac1-2a01-4f4d-9b36-5912b229ff54/map/?t=orthophoto"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-black px-6 py-3 rounded-md shadow-md text-lg transition"
-            >
-              Click to view test site 🗺️ →
-            </a>
           </div>
         </div>
       </footer>
