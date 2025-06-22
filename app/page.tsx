@@ -6,7 +6,7 @@ import { ExternalLink, MapPin, DrillIcon as Drone, Leaf, ArrowRight } from 'luci
 export default function AgricultureDroneLandingPage() {
   const galleryImages = [
     {
-      src: "/images/application-scenarios.png",
+      src: "/images/controller.webp",
       alt: "Professional drone in flight for agricultural surveying",
       title: "Precision Drone Technology",
     },
