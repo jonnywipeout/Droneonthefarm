@@ -211,26 +211,31 @@ export default function AgricultureDroneLandingPage() {
       <footer className="bg-slate-800 text-white py-12">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="mb-6 md:mb-0">
+            <div className="mb-6 md:mb-0 text-center md:text-left">
               <h3 className="text-2xl font-bold mb-2">Agricultural Drone Services</h3>
               <p className="text-slate-300">Professional UAV mapping and surveying in the UK</p>
             </div>
 
             <div className="text-center md:text-right">
-              <p className="mb-2">Email: droneonthefarm@outlook.com</p>
-              <p className="mb-2">YouTube: @jonnywipeout</p>
+              <p className="mb-2">
+                Email: <a href="mailto:droneonthefarm@outlook.com" className="text-green-400 hover:underline">droneonthefarm@outlook.com</a>
+              </p>
+              <p className="mb-2">
+                YouTube: <a href="https://www.youtube.com/@jonnywipeout" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:underline">@jonnywipeout</a>
+              </p>
               <p>Mobile: 07771190394</p>
-              <div className="mt-4">
-                <a
-                  href="https://cloud1.webodm.net/public/project/4e49d3ba-0d40-4675-b241-cef29cdaf309/map/?t=orthophoto"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-green-400 hover:text-green-300 transition-colors"
-                >
-                  Click to view test site 🗺️ →
-                </a>
-              </div>
             </div>
+          </div>
+
+          <div className="mt-8 flex justify-center">
+            <a
+              href="https://cloud1.webodm.net/public/project/4e49d3ba-0d40-4675-b241-cef29cdaf309/map/?t=orthophoto"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-md shadow-md text-lg transition"
+            >
+              Click to view test site 🗺️ →
+            </a>
           </div>
         </div>
       </footer>
