@@ -86,7 +86,7 @@ export default function AgricultureDroneLandingPage() {
             <CardContent className="pt-6">
               <div className="mb-4 flex justify-center">
                 <div className="p-3 bg-green-100 rounded-full">
-                  <Image src="/images/icon-mapping-final.webp" alt="Field Mapping Icon" width={48} height={48} />
+                  <Image src="/images/icon-mapping-final-v2.webp" alt="Field Mapping Icon" width={48} height={48} />
                 </div>
               </div>
               <h3 className="text-xl font-semibold text-center mb-2">Field Mapping</h3>
