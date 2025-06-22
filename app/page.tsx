@@ -58,7 +58,7 @@ export default function AgricultureDroneLandingPage() {
             Agricultural Drone Mapping Services
           </h2>
           <p className="text-xl text-green-100 max-w-2xl mb-8">
-            Precision agriculture solutions using advanced drone technology for mapping, surveying, and crop analysis
+            Precision solutions using advanced drone technology for mapping, surveying, and crop analysis within the AEC industries
           </p>
           <div className="bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-lg border border-green-200 max-w-xl w-full">
             <p className="text-gray-500 mb-2 text-sm">Visit your map site here :</p>
