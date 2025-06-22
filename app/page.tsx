@@ -11,7 +11,7 @@ export default function AgricultureDroneLandingPage() {
       title: "Precision Drone Technology",
     },
     {
-      src: "/images/green-crop-field.jpeg",
+      src: "/images/potato3.jpeg",
       alt: "Lush green crop field under dramatic sky - ideal for drone monitoring",
       title: "Healthy Crop Monitoring",
     },
