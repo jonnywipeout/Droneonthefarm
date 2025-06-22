@@ -26,7 +26,7 @@ export default function AgricultureDroneLandingPage() {
       title: "Construction Progress Monitoring",
     },
     {
-      src: "/images/potato.jpeg",
+      src: "/images/potato3.jpg",
       alt: "Aerial view of perfectly parallel field furrows showing precision agriculture patterns",
       title: "Precision Field Patterns",
     },
