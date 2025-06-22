@@ -54,7 +54,7 @@ export default function AgricultureDroneLandingPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/40" />
         <div className="relative z-10 container mx-auto px-4 h-full flex flex-col justify-center items-center text-center">
           <h1 className="text-2xl md:text-3xl font-bold text-green-400 mb-4 tracking-wide">Droneonthefarm</h1>
-          <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">
+          <h2 className="text-4xl md:text-6xl font-bold text-black mb-6 tracking-tight">
             Agricultural Drone Mapping Services
           </h2>
           <p className="text-xl text-green-100 max-w-2xl mb-8">
@@ -139,7 +139,7 @@ export default function AgricultureDroneLandingPage() {
       {/* Image Gallery */}
       <section className="py-16 bg-green-900">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 text-white">Agricultural Drone Imagery</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-black">Agricultural Drone Imagery</h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {galleryImages.map((image, index) => (
@@ -154,7 +154,7 @@ export default function AgricultureDroneLandingPage() {
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
                   <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <p className="text-white text-sm font-medium">{image.title}</p>
+                    <p className="text-black text-sm font-medium">{image.title}</p>
                   </div>
                 </div>
               </div>
@@ -165,7 +165,7 @@ export default function AgricultureDroneLandingPage() {
 
       {/* CTA Section */}
       <section
-  className="py-20 px-4 bg-center bg-cover bg-no-repeat text-white"
+  className="py-20 px-4 bg-center bg-cover bg-no-repeat text-black"
   style={{
     backgroundImage: "url('/images/potato-field-bg.jpg')",
     backgroundBlendMode: "overlay",
@@ -181,7 +181,7 @@ export default function AgricultureDroneLandingPage() {
       href="https://cloud1.webodm.net/public/project/4e49d3ba-0d40-4675-b241-cef29cdaf309/map/?t=orthophoto"
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white text-lg px-8 py-6 rounded-lg shadow-lg transition-colors duration-200 no-underline font-medium"
+      className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-black text-lg px-8 py-6 rounded-lg shadow-lg transition-colors duration-200 no-underline font-medium"
     >
       Click to view test site 🗺️ <ArrowRight className="w-5 h-5" />
     </Link>
@@ -215,7 +215,7 @@ export default function AgricultureDroneLandingPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-800 text-white py-12">
+      <footer className="bg-slate-800 text-black py-12">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-6 md:mb-0 text-center md:text-left">
@@ -239,7 +239,7 @@ export default function AgricultureDroneLandingPage() {
               href="https://cloud1.webodm.net/public/project/4e49d3ba-0d40-4675-b241-cef29cdaf309/map/?t=orthophoto"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-md shadow-md text-lg transition"
+              className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-black px-6 py-3 rounded-md shadow-md text-lg transition"
             >
               Click to view test site 🗺️ →
             </a>
