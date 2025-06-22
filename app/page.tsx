@@ -11,7 +11,7 @@ export default function AgricultureDroneLandingPage() {
       title: "Precision Drone Technology",
     },
     {
-      src: "/images/potato3.jpeg",
+      src: "/images/green-crop-field.jpeg",
       alt: "Lush green crop field under dramatic sky - ideal for drone monitoring",
       title: "Healthy Crop Monitoring",
     },
@@ -26,7 +26,7 @@ export default function AgricultureDroneLandingPage() {
       title: "Construction Progress Monitoring",
     },
     {
-      src: "/images/aerial-field-furrows.jpeg",
+      src: "/images/potato.jpeg",
       alt: "Aerial view of perfectly parallel field furrows showing precision agriculture patterns",
       title: "Precision Field Patterns",
     },
