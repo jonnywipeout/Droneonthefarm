@@ -61,7 +61,7 @@ export default function AgricultureDroneLandingPage() {
             Precision solutions using advanced drone technology for mapping, surveying, and crop analysis within the AEC industries
           </p>
           <div className="bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-lg border border-green-200 max-w-xl w-full">
-            <p className="text-gray-500 mb-2 text-sm">Visit your map site here :</p>
+            <p className="font bold text-gray-500 mb-2 text-sm">Visit your map site here :</p>
             <div className="flex items-center justify-center gap-2 flex-wrap">
               <a
                 href="https://cloud1.webodm.net/public/project/79ec4733-fccb-4fb2-8fd0-7f053da179f3/map/?t=orthophoto"
