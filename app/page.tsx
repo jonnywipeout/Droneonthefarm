@@ -169,12 +169,12 @@ export default function AgricultureDroneLandingPage() {
   style={{
     backgroundImage: "url('/images/potato-field-bg.jpg')",
     backgroundBlendMode: "overlay",
-    backgroundColor: "rgba(0, 100, 0, 0.15)",
+    backgroundColor: "rgba(0, 100, 0, 0.3)",
   }}
 >
   <div className="max-w-3xl mx-auto text-center">
-    <h2 className="text-3xl font-bold mb-6">Ready to explore our detailed mapping portal?</h2>
-    <p className="text-lg mb-8">
+    <h2 className="text-2xl md:text-3xl font-bold mb-4">Ready to explore our detailed mapping portal?</h2>
+    <p className="text-xl font-semibold mb-10">
       Visit our interactive agricultural drone mapping site for comprehensive field analysis and insights
     </p>
     <Link
