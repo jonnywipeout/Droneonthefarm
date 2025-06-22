@@ -69,7 +69,7 @@ export default function AgricultureDroneLandingPage() {
                 rel="noopener noreferrer"
                 className="text-green-700 font-medium text-lg md:text-xl hover:text-green-800 transition-colors flex items-center gap-1 break-all"
               >
-                Your site map link 🗺️ <ExternalLink className="w-4 h-4" />
+                Click to view test site 🗺️ <ExternalLink className="w-4 h-4" />
               </a>
             </div>
           </div>
@@ -176,7 +176,7 @@ export default function AgricultureDroneLandingPage() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white text-lg px-8 py-6 rounded-lg shadow-lg transition-colors duration-200 no-underline font-medium"
           >
-            Your site map link 🗺️ <ArrowRight className="w-5 h-5" />
+            Click to view test site 🗺️ <ArrowRight className="w-5 h-5" />
           </Link>
         </div>
       </section>
@@ -227,7 +227,7 @@ export default function AgricultureDroneLandingPage() {
                   rel="noopener noreferrer"
                   className="text-green-400 hover:text-green-300 transition-colors"
                 >
-                  Your site map link 🗺️ →
+                  Click to view test site 🗺️ →
                 </a>
               </div>
             </div>
