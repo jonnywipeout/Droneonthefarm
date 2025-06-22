@@ -8,7 +8,7 @@ export default function AgricultureDroneLandingPage() {
     {
       src: "/images/controller.webp",
       alt: "Professional drone in flight for agricultural surveying",
-      title: "Precision Drone Technology",
+      title: "Latest Drone Technology",
     },
     {
       src: "/images/green-crop-field.jpeg",
@@ -28,7 +28,7 @@ export default function AgricultureDroneLandingPage() {
     {
       src: "/images/potato3.jpg",
       alt: "Aerial view of perfectly parallel field furrows showing precision agriculture patterns",
-      title: "Precision Field Patterns",
+      title: "Precise Field Patterns",
     },
     {
       src: "/images/fendt-tractor-field.jpeg",
