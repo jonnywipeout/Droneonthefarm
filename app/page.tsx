@@ -134,12 +134,8 @@ export default function AgricultureDroneLandingPage() {
               </p>
             </CardContent>
           </Card>
-          <Card className="border-green-200 shadow-md hover:shadow-lg transition-shadow">
-            <CardContent className="pt-6">
-              <div className="mb-4 flex justify-center">
-                <div className="p-3 bg-green-100 rounded-full">
-                  <MapPin className="w-8 h-8 text-green-700" />
-                </div>
+
+        </div>
               </div>
               <h3 className="text-xl font-semibold text-center mb-2">Field Mapping</h3>
               <p className="text-gray-600 text-center">
