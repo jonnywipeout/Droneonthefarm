@@ -86,7 +86,7 @@ export default function AgricultureDroneLandingPage() {
             <CardContent className="pt-6">
               <div className="mb-4 flex justify-center">
                 <div className="p-3 bg-green-100 rounded-full">
-                  <MapPin className="w-8 h-8 text-green-700" />
+                  <Image src="/images/icon-mapping.webp" alt="Field Mapping Icon" width={48} height={48} />
                 </div>
               </div>
               <h3 className="text-xl font-semibold text-center mb-2">Field Mapping</h3>
@@ -103,7 +103,7 @@ export default function AgricultureDroneLandingPage() {
             <CardContent className="pt-6">
               <div className="mb-4 flex justify-center">
                 <div className="p-3 bg-green-100 rounded-full">
-                  <Drone className="w-8 h-8 text-green-700" />
+                  <Image src="/images/icon-aec.webp" alt="AEC Progress Icon" width={48} height={48} />
                 </div>
               </div>
               <h3 className="text-xl font-semibold text-center mb-2">AEC Progress Reports</h3>
@@ -121,7 +121,7 @@ export default function AgricultureDroneLandingPage() {
             <CardContent className="pt-6">
               <div className="mb-4 flex justify-center">
                 <div className="p-3 bg-green-100 rounded-full">
-                  <Leaf className="w-8 h-8 text-green-700" />
+                  <Image src="/images/icon-orthomosaic.webp" alt="Orthomosaic Icon" width={48} height={48} />
                 </div>
               </div>
               <h3 className="text-xl font-semibold text-center mb-2">3D Mapping & Orthomosaics</h3>
