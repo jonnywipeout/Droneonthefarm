@@ -8,7 +8,7 @@ export default function AgricultureDroneLandingPage() {
     {
       src: "/images/controller.webp",
       alt: "Professional drone in flight for agricultural surveying",
-      title: "Latest Drone Technology",
+      title: "Precision Drone Technology",
     },
     {
       src: "/images/green-crop-field.jpeg",
@@ -28,7 +28,7 @@ export default function AgricultureDroneLandingPage() {
     {
       src: "/images/potato3.jpg",
       alt: "Aerial view of perfectly parallel field furrows showing precision agriculture patterns",
-      title: "Precise Field Patterns",
+      title: "Precision Field Patterns",
     },
     {
       src: "/images/fendt-tractor-field.jpeg",
@@ -82,7 +82,7 @@ export default function AgricultureDroneLandingPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-          <Card className="border border-green-300 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 transform ring-1 ring-green-100">
+          <Card className="border border-green-300 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 transform ring-1 ring-green-100 ring-inset shadow-gray-300">
             <CardContent className="pt-6">
               <div className="mb-4 flex justify-center">
                 <div className="p-3 bg-green-100 rounded-full">
@@ -99,7 +99,7 @@ export default function AgricultureDroneLandingPage() {
             </CardContent>
           </Card>
 
-          <Card className="border border-green-300 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 transform ring-1 ring-green-100">
+          <Card className="border border-green-300 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 transform ring-1 ring-green-100 ring-inset shadow-gray-300">
             <CardContent className="pt-6">
               <div className="mb-4 flex justify-center">
                 <div className="p-3 bg-green-100 rounded-full">
@@ -117,7 +117,7 @@ export default function AgricultureDroneLandingPage() {
             </CardContent>
           </Card>
 
-          <Card className="border border-green-300 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 transform ring-1 ring-green-100">
+          <Card className="border border-green-300 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 transform ring-1 ring-green-100 ring-inset shadow-gray-300">
             <CardContent className="pt-6">
               <div className="mb-4 flex justify-center">
                 <div className="p-3 bg-green-100 rounded-full">
