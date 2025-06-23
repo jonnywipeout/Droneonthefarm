@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
-import { ExternalLink, MapPin, DrillIcon as Drone, Leaf, ArrowRight } from 'lucide-react'
+import { ExternalLink, MapPin, DrillIcon as Drone, Leaf, ArrowRight, Cube } from 'lucide-react'
 
 export default function AgricultureDroneLandingPage() {
   const galleryImages = [
@@ -69,7 +69,7 @@ export default function AgricultureDroneLandingPage() {
                 rel="noopener noreferrer"
                 className="text-green-700 font-medium text-lg md:text-xl hover:text-green-800 transition-colors flex items-center gap-1 break-all"
               >
-                Click to view test site 🗺️ <ExternalLink className="w-4 h-4" />
+                Click to view test site 🗘️ <ExternalLink className="w-4 h-4" />
               </a>
             </div>
           </div>
@@ -81,7 +81,6 @@ export default function AgricultureDroneLandingPage() {
         <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Our Agricultural Drone Services</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-
           <Card className="border border-green-300 shadow-lg hover:shadow-2xl hover:-translate-y-2 hover:scale-105 transition-all duration-300 transform ring-1 ring-green-100 ring-inset">
             <CardContent className="pt-6">
               <div className="mb-4 flex justify-center">
@@ -121,7 +120,7 @@ export default function AgricultureDroneLandingPage() {
             <CardContent className="pt-6">
               <div className="mb-4 flex justify-center">
                 <div className="p-3 bg-green-100 rounded-full">
-                  <Image src="/images/icon-orthomosaic-final.webp" alt="Orthomosaic Icon" width={48} height={48} />
+                  <Cube className="w-8 h-8 text-green-700" />
                 </div>
               </div>
               <h3 className="text-xl font-semibold text-center mb-2">3D Mapping & Orthomosaics</h3>
@@ -134,7 +133,6 @@ export default function AgricultureDroneLandingPage() {
               </p>
             </CardContent>
           </Card>
-
         </div>
       </section>
 
@@ -178,7 +176,7 @@ export default function AgricultureDroneLandingPage() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white text-lg px-8 py-6 rounded-lg shadow-lg transition-colors duration-200 no-underline font-medium"
           >
-            Click to view test site 🗺️ <ArrowRight className="w-5 h-5" />
+            Click to view test site 🗘️ <ArrowRight className="w-5 h-5" />
           </Link>
         </div>
       </section>
@@ -229,7 +227,7 @@ export default function AgricultureDroneLandingPage() {
                   rel="noopener noreferrer"
                   className="text-green-400 hover:text-green-300 transition-colors"
                 >
-                  Click to view test site 🗺️ →
+                  Click to view test site 🗘️ →
                 </a>
               </div>
             </div>
