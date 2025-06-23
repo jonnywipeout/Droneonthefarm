@@ -1,9 +1,3 @@
-import { Playfair_Display } from "next/font/google"
-
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  weight: ["500", "600"], // Adjust weight as needed
-})
 import Image from "next/image"
 import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
@@ -29,27 +23,25 @@ export default function AgricultureDroneLandingPage() {
             alt="Agricultural drone surveying landscape"
             fill
             className="object-cover"
-            style={{ filter: "brightness(0.65)" }}
+            style={{ filter: "brightness(0.7)" }}
             priority
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30" />
-
-        <div className="relative z-10 container mx-auto px-4 h-full flex flex-col justify-center items-center text-center animate-fade-in">
-          <h1 className={`${playfair.className} text-white text-6xl md:text-7xl font-medium tracking-wide mb-3 drop-shadow-md`}>
-  Droneonthefarm
-</h1>
-
-          <p className="text-green-100 text-lg md:text-xl italic font-light max-w-xl mb-8 drop-shadow-sm">
-            Agricultural Drone Mapping Services
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/40" />
+        <div className="relative z-10 container mx-auto px-4 h-full flex flex-col justify-center items-center text-center">
+          <h1 className="text-white text-6xl md:text-7xl font-medium tracking-wide mb-3 drop-shadow-md">
+            Droneonthefarm
+          </h1>
+          <p className="text-green-100 text-lg md:text-xl italic font-light max-w-2xl mb-6">
+            Aerial Mapping Services for Farms and Construction Sites
           </p>
           <a
             href="https://cloud1.webodm.net/public/project/79ec4733-fccb-4fb2-8fd0-7f053da179f3/map/?t=orthophoto"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-white bg-green-700 hover:bg-green-800 px-6 py-3 rounded-md text-base font-medium shadow-lg transition duration-200"
+            className="block w-full max-w-3xl bg-green-700 hover:bg-green-800 text-white text-lg p-6 rounded-md shadow-md transition-all"
           >
-            View Latest Map <ExternalLink className="w-4 h-4" />
+            Ed Udale potato field orthomosaic map – 19th May 2025 – Apley, Telford
           </a>
         </div>
       </section>
@@ -118,16 +110,15 @@ export default function AgricultureDroneLandingPage() {
       {/* CTA Section */}
       <section className="py-16 container mx-auto px-4 bg-green-50 rounded-lg">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6 text-green-900 tracking-tight">Ready to explore our detailed mapping portal?</h2>
-          <p className="text-lg text-green-700 mb-8">Visit our interactive drone mapping site for in-depth agricultural and construction analysis</p>
-          <Link
+          <h2 className="text-3xl font-bold mb-6 text-green-900 tracking-tight">Client Map Access</h2>
+          <a
             href="https://cloud1.webodm.net/public/project/79ec4733-fccb-4fb2-8fd0-7f053da179f3/map/?t=orthophoto"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white text-lg px-8 py-6 rounded-lg shadow-lg font-medium"
+            className="block w-full bg-green-700 hover:bg-green-800 text-white text-lg p-6 rounded-md shadow-md transition-all"
           >
-            Open map viewer <ArrowRight className="w-5 h-5" />
-          </Link>
+            Ed Udale potato field orthomosaic map – 19th May 2025 – Apley, Telford
+          </a>
         </div>
       </section>
 
