@@ -94,7 +94,6 @@ export default function AgricultureDroneLandingPage() {
               </p>
             </CardContent>
           </Card>
-
           <Card className="border border-green-300 shadow-lg hover:shadow-2xl hover:-translate-y-2 hover:scale-105 transition-all duration-300 transform ring-1 ring-green-100 ring-inset">
             <CardContent className="pt-6">
               <div className="mb-4 flex justify-center">
@@ -111,7 +110,6 @@ export default function AgricultureDroneLandingPage() {
               </p>
             </CardContent>
           </Card>
-
           <Card className="border border-green-300 shadow-lg hover:shadow-2xl hover:-translate-y-2 hover:scale-105 transition-all duration-300 transform ring-1 ring-green-100 ring-inset">
             <CardContent className="pt-6">
               <div className="mb-4 flex justify-center">
@@ -155,7 +153,50 @@ export default function AgricultureDroneLandingPage() {
         </div>
       </section>
 
-      {/* Footer Section */}
+      {/* CTA Section */}
+      <section className="py-16 container mx-auto px-4 bg-green-50 rounded-lg">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-6 text-green-900">Ready to explore our detailed mapping portal?</h2>
+          <p className="text-lg text-green-700 mb-8">
+            Visit our interactive agricultural drone mapping site for comprehensive field analysis and insights
+          </p>
+          <Link
+            href="https://cloud1.webodm.net/public/project/79ec4733-fccb-4fb2-8fd0-7f053da179f3/map/?t=orthophoto"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white text-lg px-8 py-6 rounded-lg shadow-lg transition-colors duration-200 no-underline font-medium"
+          >
+            Open map viewer <ArrowRight className="w-5 h-5" />
+          </Link>
+        </div>
+      </section>
+
+      {/* Testimonial Section */}
+      <section className="py-16 bg-slate-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">What The Industry Says</h2>
+          <div className="max-w-4xl mx-auto">
+            <Card className="border-green-200 shadow-lg">
+              <CardContent className="pt-8 pb-8">
+                <p className="text-gray-600 text-lg italic mb-6 text-center">
+                  "Drone mapping technology is revolutionizing modern agriculture. These advanced aerial systems provide
+                  farmers with unprecedented insights into field conditions, crop health, and resource
+                  management—enabling precision farming practices that boost yields while reducing environmental
+                  impact."
+                </p>
+                <div className="flex items-center justify-center">
+                  <div className="text-center">
+                    <p className="font-semibold text-gray-800">Modern Farming Today</p>
+                    <p className="text-gray-500">Agricultural Technology Special Issue, 2025</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
       <footer className="bg-slate-800 text-white py-12">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
@@ -166,7 +207,7 @@ export default function AgricultureDroneLandingPage() {
             <div className="text-center md:text-right">
               <p className="mb-2">Email: <a href="mailto:droneonthefarm@outlook.com" className="text-green-400 hover:underline">droneonthefarm@outlook.com</a></p>
               <p className="mb-2">YouTube: <a href="https://www.youtube.com/@jonnywipeout" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:underline">@jonnywipeout</a></p>
-              <p className="mb-2">Mobile: 07771190394</p>
+              <p>Mobile: 07771190394</p>
               <div className="mt-4">
                 <a
                   href="https://cloud1.webodm.net/public/project/79ec4733-fccb-4fb2-8fd0-7f053da179f3/map/?t=orthophoto"
