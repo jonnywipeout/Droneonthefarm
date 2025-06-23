@@ -101,14 +101,3 @@ export default function AgricultureDroneLandingPage() {
     </div>
   )
 }
-
-// Add styles
-<style jsx global>{`
-@keyframes fade-in-down {
-  0% { opacity: 0; transform: translateY(-20px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-.animate-fade-in-down {
-  animation: fade-in-down 1s ease-out forwards;
-}
-`}</style>
