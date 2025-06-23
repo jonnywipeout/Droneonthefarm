@@ -29,10 +29,13 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
-          {children}
-        </ThemeProvider>
-      </body>
+  <div className="min-h-screen border border-black p-[20px]">
+    <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
+      {children}
+    </ThemeProvider>
+  </div>
+</body>
+
     </html>
   )
 }
