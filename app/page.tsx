@@ -1,3 +1,9 @@
+import { Playfair_Display } from "next/font/google"
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["500", "600"], // Adjust weight as needed
+})
 import Image from "next/image"
 import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
@@ -30,9 +36,10 @@ export default function AgricultureDroneLandingPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30" />
 
         <div className="relative z-10 container mx-auto px-4 h-full flex flex-col justify-center items-center text-center animate-fade-in">
-          <h1 className="text-white text-6xl md:text-7xl font-extrabold tracking-wide mb-3 drop-shadow-md">
-            Droneonthefarm
-          </h1>
+          <h1 className={`${playfair.className} text-white text-6xl md:text-7xl font-medium tracking-wide mb-3 drop-shadow-md`}>
+  Droneonthefarm
+</h1>
+
           <p className="text-green-100 text-lg md:text-xl italic font-light max-w-xl mb-8 drop-shadow-sm">
             Agricultural Drone Mapping Services
           </p>
