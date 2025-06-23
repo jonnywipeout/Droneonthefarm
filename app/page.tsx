@@ -124,17 +124,17 @@ export default function AgricultureDroneLandingPage() {
               <p className="mb-2">Email: <a href="mailto:droneonthefarm@outlook.com" className="text-green-400 hover:underline">droneonthefarm@outlook.com</a></p>
               <p className="mb-2">YouTube: <a href="https://www.youtube.com/@jonnywipeout" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:underline">@jonnywipeout</a></p>
               <p>Mobile: 07771190394</p>
-              <div className="mt-4">
-                <a
-                  href="https://cloud1.webodm.net/public/project/79ec4733-fccb-4fb2-8fd0-7f053da179f3/map/?t=orthophoto"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-green-400 hover:text-green-300 transition-colors"
-                >
-                  Open map viewer →
-                </a>
-              </div>
             </div>
+          </div>
+          <div className="mt-8 flex justify-center">
+            <a
+              href="https://cloud1.webodm.net/public/project/79ec4733-fccb-4fb2-8fd0-7f053da179f3/map/?t=orthophoto"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-lg shadow-md"
+            >
+              Open map viewer <ArrowRight className="w-5 h-5" />
+            </a>
           </div>
         </div>
       </footer>
