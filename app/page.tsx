@@ -45,7 +45,7 @@ export default function AgricultureDroneLandingPage() {
             href="https://cloud1.webodm.net/public/project/79ec4733-fccb-4fb2-8fd0-7f053da179f3/map/?t=orthophoto"
             target="_blank"
             rel="noopener noreferrer"
-            className="block w-full max-w-3xl bg-green-600/70 hover:bg-green-700/80 border border-green-800 hover:shadow-2xl text-green-100 text-lg p-6 rounded-md shadow-lg transition-all font-light italic"
+            className="block w-full max-w-3xl bg-green-600/70 hover:bg-green-700/80 border border-green-800 hover:shadow-2xl text-black text-lg p-6 rounded-md shadow-lg transition-all font-light italic"
           >
             Ed Udale potato field orthomosaic map – 19th May 2025 – Apley, Telford
           </a>
@@ -121,7 +121,7 @@ export default function AgricultureDroneLandingPage() {
             href="https://cloud1.webodm.net/public/project/79ec4733-fccb-4fb2-8fd0-7f053da179f3/map/?t=orthophoto"
             target="_blank"
             rel="noopener noreferrer"
-            className="block w-full bg-green-600/70 hover:bg-green-700/80 border border-green-800 hover:shadow-2xl text-green-100 text-lg p-6 rounded-md shadow-lg transition-all font-light italic"
+            className="block w-full bg-green-600/70 hover:bg-green-700/80 border border-green-800 hover:shadow-2xl text-black text-lg p-6 rounded-md shadow-lg transition-all font-light italic"
           >
             Ed Udale potato field orthomosaic map – 19th May 2025 – Apley, Telford
           </a>
