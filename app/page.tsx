@@ -36,7 +36,7 @@ export default function AgricultureDroneLandingPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/40" />
         <div className="relative z-10 container mx-auto px-4 h-full flex flex-col justify-center items-center text-center">
           <h1 className={`${playfair.className} text-white text-6xl md:text-7xl font-medium tracking-wide mb-3 drop-shadow-md`}>
-            Droneonthefarm
+            Drone on the farm
           </h1>
           <p className="text-green-100 text-lg md:text-xl italic font-light max-w-2xl mb-6">
             Aerial Mapping Services for Farms and Construction Sites
