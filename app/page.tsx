@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
-import { ExternalLink, MapPin, DrillIcon as Drone, Leaf, ArrowRight, Cuboid } from 'lucide-react'
+import { ExternalLink, MapPin, DrillIcon as Drone, Leaf, ArrowRight } from 'lucide-react'
 
 export default function AgricultureDroneLandingPage() {
   const galleryImages = [
@@ -120,7 +120,7 @@ export default function AgricultureDroneLandingPage() {
             <CardContent className="pt-6">
               <div className="mb-4 flex justify-center">
                 <div className="p-3 bg-green-100 rounded-full">
-                  <Cuboid className="w-8 h-8 text-green-700" />
+                  <Image src="/images/icon-3d-mapping.webp" alt="3D Mapping Drone Icon" width={48} height={48} />
                 </div>
               </div>
               <h3 className="text-xl font-semibold text-center mb-2">3D Mapping & Orthomosaics</h3>
