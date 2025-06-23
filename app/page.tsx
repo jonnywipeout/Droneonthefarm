@@ -20,7 +20,7 @@ export default function AgricultureDroneLandingPage() {
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-green-50 to-slate-100 font-sans">
+    <div className="min-h-screen bg-gradient-to-b from-green-50 to-slate-100 font-sans border border-black">
       {/* Hero Section */}
       <section className="relative h-[500px] overflow-hidden">
         <div className="absolute inset-0">
