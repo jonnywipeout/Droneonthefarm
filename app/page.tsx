@@ -1,4 +1,4 @@
- import Image from "next/image"
+import Image from "next/image"
 import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
 import { ExternalLink, ArrowRight, Mail, Youtube } from "lucide-react"
@@ -23,20 +23,24 @@ export default function AgricultureDroneLandingPage() {
             alt="Agricultural drone surveying landscape"
             fill
             className="object-cover"
-            style={{ filter: "brightness(0.7)" }}
+            style={{ filter: "brightness(0.65)" }}
             priority
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/40" />
-        <div className="relative z-10 container mx-auto px-4 h-full flex flex-col justify-center items-center text-center">
-          <h1 className="text-3xl md:text-4xl font-bold text-green-400 mb-2 tracking-widest uppercase">Droneonthefarm</h1>
-          <h2 className="text-4xl md:text-6xl font-bold text-white mb-4 tracking-tight leading-tight">Agricultural Drone Mapping Services</h2>
-          <p className="text-lg md:text-xl text-green-100 max-w-2xl mb-8">Precision drone solutions for agriculture, construction, and environmental mapping</p>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30" />
+
+        <div className="relative z-10 container mx-auto px-4 h-full flex flex-col justify-center items-center text-center animate-fade-in">
+          <h1 className="text-white text-6xl md:text-7xl font-extrabold tracking-wide mb-3 drop-shadow-md">
+            Droneonthefarm
+          </h1>
+          <p className="text-green-100 text-lg md:text-xl italic font-light max-w-xl mb-8 drop-shadow-sm">
+            Agricultural Drone Mapping Services
+          </p>
           <a
             href="https://cloud1.webodm.net/public/project/79ec4733-fccb-4fb2-8fd0-7f053da179f3/map/?t=orthophoto"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-white bg-green-700 hover:bg-green-800 px-6 py-3 rounded-md text-base font-medium shadow-lg"
+            className="inline-flex items-center gap-2 text-white bg-green-700 hover:bg-green-800 px-6 py-3 rounded-md text-base font-medium shadow-lg transition duration-200"
           >
             View Latest Map <ExternalLink className="w-4 h-4" />
           </a>
