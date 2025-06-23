@@ -123,7 +123,7 @@ export default function AgricultureDroneLandingPage() {
                   <Image src="/images/icon-3d-mapping.webp" alt="3D Mapping Drone Icon" width={48} height={48} />
                 </div>
               </div>
-              <h3 className="text-xl font-semibold text-center mb-2">3D Mapping & Orthomosaics</h3>
+              <h3 className="text-xl font-semibold text-center mb-2">3D Maps & Orthomosaics</h3>
               <p className="text-gray-600 text-center mb-3">
                 High-resolution 2D orthomosaic maps and detailed 3D field models for comprehensive spatial analysis and
                 planning
