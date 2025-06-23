@@ -136,17 +136,19 @@ export default function AgricultureDroneLandingPage() {
         <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Gallery</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {galleryImages.map((image, index) => (
-            <div key={index} className="overflow-hidden rounded-lg shadow-lg">
-              <div className="relative w-full h-60">
+            <div key={index} className="aspect-video overflow-hidden rounded-lg shadow-lg group">
+              <div className="relative w-full h-full">
                 <Image
-                  src={image.src}
+                  src={image.src || "/placeholder.svg"}
                   alt={image.alt}
                   fill
-                  className="object-cover"
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
-              </div>
-              <div className="p-4">
-                <p className="font-semibold text-lg text-gray-800">{image.title}</p>
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
+                <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <p className="text-white text-sm font-medium">{image.title}</p>
+                </div>
               </div>
             </div>
           ))}
