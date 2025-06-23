@@ -6,7 +6,7 @@ import { ExternalLink, ArrowRight } from 'lucide-react'
 export default function AgricultureDroneLandingPage() {
   const galleryImages = [
     {
-      src: "/images/controller.webp",
+      src: "/images/drones-collection.jpeg",
       alt: "Professional drone in flight for agricultural surveying",
       title: "Precision Drone Technology",
     },
