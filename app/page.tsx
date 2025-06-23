@@ -38,7 +38,7 @@ export default function AgricultureDroneLandingPage() {
           <h1 className={`${playfair.className} text-white text-6xl md:text-7xl font-medium tracking-wide mb-3 drop-shadow-md`}>
             Drone on the farm
           </h1>
-          <p className="text-green-100 text-lg md:text-xl italic font-light max-w-2xl mb-6">
+          <p className="text-black text-lg md:text-xl italic font-light max-w-2xl mb-6">
             Aerial Mapping Services for Farms and Construction Sites
           </p>
           <a
