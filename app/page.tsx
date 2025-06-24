@@ -55,7 +55,7 @@ export default function AgricultureDroneLandingPage() {
         </div>
       </section>
 
-      {/* Redesigned Services Section */}
+      {/* Original Services Section Restored */}
       <section className="py-16 container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12 text-gray-800 tracking-tight">Our Drone Services</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -63,44 +63,32 @@ export default function AgricultureDroneLandingPage() {
             icon: "/images/icon-mapping-fresh.webp",
             title: "Field Mapping",
             desc: "Comprehensive aerial mapping of agricultural fields for precise planning and analysis",
-            quote: "Creating detailed digital maps from above",
-            link: "#"
+            quote: "Creating detailed digital maps from above"
           }, {
             icon: "/images/icon-aec-final.webp",
             title: "AEC Progress Reports",
             desc: "Aerial documentation for construction and field projects with professional-grade outputs",
-            quote: "Tracking progress from above",
-            link: "#"
+            quote: "Tracking progress from above"
           }, {
             icon: "/images/icon-3d-mapping.webp",
             title: "3D Maps & Orthomosaics",
             desc: "High-resolution 2D and 3D models for planning and insight",
-            quote: "Transforming fields into digital twins",
-            link: "#"
+            quote: "Transforming fields into digital twins"
           }].map((card, i) => (
-            <div
-              key={i}
-              className="backdrop-blur-md bg-white/10 border border-green-200/40 rounded-xl p-6 shadow-lg hover:shadow-2xl hover:scale-[1.03] transition-all duration-300 transform flex flex-col justify-between min-h-[360px] text-white"
-            >
-              <div>
-                <div className="mb-4 flex justify-center">
-                  <div className="p-3 bg-green-100 rounded-full shadow-md">
-                    <Image src={card.icon} alt={card.title} width={48} height={48} />
+            <Card key={i} className="min-h-[360px] border border-green-300 shadow-lg hover:shadow-2xl hover:-translate-y-2 hover:scale-105 transition-all duration-300 transform ring-1 ring-green-100 ring-inset">
+              <CardContent className="pt-6 flex flex-col justify-between h-full">
+                <div>
+                  <div className="mb-4 flex justify-center">
+                    <div className="p-3 bg-green-100 rounded-full">
+                      <Image src={card.icon} alt={card.title} width={48} height={48} />
+                    </div>
                   </div>
+                  <h3 className="text-xl font-semibold text-center mb-2">{card.title}</h3>
+                  <p className="text-gray-600 text-center">{card.desc}</p>
                 </div>
-                <h3 className="text-xl font-semibold text-center text-white drop-shadow mb-2">{card.title}</h3>
-                <p className="text-white/90 text-center text-sm">{card.desc}</p>
-              </div>
-              <div className="text-center mt-4">
-                <p className="text-green-200 text-sm italic font-medium mb-2">"{card.quote}"</p>
-                <a
-                  href={card.link}
-                  className="text-green-100 text-sm font-medium underline hover:text-green-300 transition"
-                >
-                  Learn more →
-                </a>
-              </div>
-            </div>
+                <p className="text-green-700 text-center text-sm font-medium italic mt-4">"{card.quote}"</p>
+              </CardContent>
+            </Card>
           ))}
         </div>
       </section>
