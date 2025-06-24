@@ -1,118 +1,147 @@
-import Image from "next/image";
-import Link from "next/link";
-import { Card, CardContent } from "@/components/ui/card";
-import { ExternalLink, MapPin, DrillIcon as Drone, Leaf, ArrowRight } from "lucide-react";
+import Image from "next/image"
+import Link from "next/link"
+import { Card, CardContent } from "@/components/ui/card"
+import { ExternalLink, ArrowRight, Mail, Youtube } from "lucide-react"
+import { Playfair_Display } from "next/font/google"
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["500", "600"]
+})
 
 export default function AgricultureDroneLandingPage() {
   const galleryImages = [
-    { src: "/images/drone-in-flight.jpeg", alt: "Professional drone in flight", title: "Precision Drone Technology" },
-    { src: "/images/green-crop-field.jpeg", alt: "Lush green crop field", title: "Healthy Crop Monitoring" },
-    { src: "/images/aerial-tractor-planting.jpeg", alt: "Aerial view of tractor", title: "Precision Planting Operations" },
-    { src: "/images/construction-site-aerial.png", alt: "Residential construction site", title: "Construction Progress Monitoring" },
-    { src: "/images/aerial-field-furrows.jpeg", alt: "Parallel field furrows", title: "Precision Field Patterns" },
-    { src: "/images/agricultural-machinery-field.png", alt: "Tractor during golden hour", title: "Advanced Agricultural Machinery" },
-  ];
+    { src: "/images/drones-collection.jpeg", alt: "Professional drone in flight for agricultural surveying", title: "Precision Drone Technology" },
+    { src: "/images/green-crop-field.jpeg", alt: "Lush green crop field under dramatic sky - ideal for drone monitoring", title: "Healthy Crop Monitoring" },
+    { src: "/images/aerial-tractor-planting.jpeg", alt: "Aerial view of tractor with planting equipment working in field during twilight", title: "Precision Planting Operations" },
+    { src: "/images/construction-site-aerial.png", alt: "Aerial view of residential construction site showing building progress and site layout", title: "Construction Progress Monitoring" },
+    { src: "/images/potato3.jpg", alt: "Aerial view of perfectly parallel field furrows showing precision agriculture patterns", title: "Precision Field Patterns" },
+    { src: "/images/fendt-tractor-field.jpeg", alt: "Fendt tractor with agricultural equipment working in plowed field", title: "Advanced Agricultural Machinery" },
+  ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-green-50 to-slate-100 text-gray-800">
-      {/* Header Section with new background */}
-      <section className="py-24 px-4 text-center bg-gradient-to-b from-green-100 to-green-50">
-        <h1 className="text-4xl md:text-6xl font-bold text-green-700 mb-4 tracking-tight">Droneonthefarm</h1>
-        <h2 className="text-xl md:text-2xl text-gray-600 max-w-2xl mx-auto">
-          Agricultural Drone Mapping Services – Precision aerial insights for farms and sites
-        </h2>
-        <div className="mt-8 bg-white/80 border border-green-200 shadow-md rounded-lg max-w-xl mx-auto p-4">
-          <p className="text-sm text-gray-600 mb-2">Visit your map site here:</p>
+    <div className="min-h-screen bg-gradient-to-b from-green-50 to-slate-100 font-sans border border-black p-4 md:p-6">
+      
+      {/* Hero Section with Glassmorphism */}
+      <section className="relative h-[500px] overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/drone-landscape.jpeg"
+            alt="Agricultural drone surveying landscape"
+            fill
+            className="object-cover"
+            style={{ filter: "brightness(0.85)" }} // <- Lightened background
+            priority
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/10" /> {/* <- Lightened overlay */}
+        <div className="relative z-10 container mx-auto h-full flex flex-col justify-center items-center text-center px-4">
+          <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow-xl px-8 py-10 max-w-3xl text-white">
+            <h1 className={`${playfair.className} text-5xl md:text-6xl font-semibold tracking-wide mb-4 drop-shadow-lg`}>
+              Drone on the farm
+            </h1>
+            <p className="text-2xl md:text-[1.7rem] italic font-light text-green-100 drop-shadow-sm mt-2">
+              Aerial Mapping Services for Farms and Construction Sites
+            </p>
+          </div>
           <a
-            href="#"
+            href="https://cloud1.webodm.net/public/project/79ec4733-fccb-4fb2-8fd0-7f053da179f3/map/?t=orthophoto"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 text-green-700 font-medium text-lg hover:text-green-800 transition-colors"
+            className="mt-6 block w-full max-w-3xl bg-green-600/70 hover:bg-green-700/80 border border-green-800 hover:shadow-2xl text-black text-lg p-6 rounded-md shadow-lg transition-all font-semibold italic"
           >
-            Your site map link 🗺️ <ExternalLink className="w-4 h-4" />
+            Ed Udale potato field orthomosaic map – 19th May 2025 – Apley, Telford
           </a>
         </div>
       </section>
 
       {/* Services Section */}
-      <section className="py-20 container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">Our Agricultural Drone Services</h2>
+      <section className="py-16 container mx-auto px-4">
+        <h2 className="text-3xl font-bold text-center mb-12 text-gray-800 tracking-tight">Our Drone Services</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[{
-            icon: <MapPin className="w-8 h-8 text-green-700" />, title: "Field Mapping", desc: "Comprehensive aerial mapping of agricultural fields for planning and analysis", quote: "Creating detailed digital maps from above"
+            icon: "/images/icon-mapping-fresh.webp",
+            title: "Field Mapping",
+            desc: "Comprehensive aerial mapping of agricultural fields for precise planning and analysis",
+            quote: "Creating detailed digital maps from above"
           }, {
-            icon: <Drone className="w-8 h-8 text-green-700" />, title: "AEC Progress Reports", desc: "Documentation for construction/field projects with progress insights", quote: "Tracking progress from above"
+            icon: "/images/icon-aec-final.webp",
+            title: "AEC Progress Reports",
+            desc: "Aerial documentation for construction and field projects with professional-grade outputs",
+            quote: "Tracking progress from above"
           }, {
-            icon: <Leaf className="w-8 h-8 text-green-700" />, title: "3D Mapping & Orthomosaics", desc: "High-resolution orthomosaic maps and 3D field models for spatial analysis", quote: "Transforming fields into digital twins"
-          }].map((s, i) => (
-            <Card key={i} className="border-green-200 shadow-md hover:shadow-lg transition">
-              <CardContent className="pt-6 text-center">
-                <div className="mb-4 flex justify-center">
-                  <div className="p-3 bg-green-100 rounded-full">{s.icon}</div>
+            icon: "/images/icon-3d-mapping.webp",
+            title: "3D Maps & Orthomosaics",
+            desc: "High-resolution 2D and 3D models for planning and insight",
+            quote: "Transforming fields into digital twins"
+          }].map((card, i) => (
+            <Card key={i} className="min-h-[360px] border border-green-300 shadow-lg hover:shadow-2xl hover:-translate-y-2 hover:scale-105 transition-all duration-300 transform ring-1 ring-green-100 ring-inset">
+              <CardContent className="pt-6 flex flex-col justify-between h-full">
+                <div>
+                  <div className="mb-4 flex justify-center">
+                    <div className="p-3 bg-green-100 rounded-full">
+                      <Image src={card.icon} alt={card.title} width={48} height={48} />
+                    </div>
+                  </div>
+                  <h3 className="text-xl font-semibold text-center mb-2">{card.title}</h3>
+                  <p className="text-gray-600 text-center">{card.desc}</p>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">{s.title}</h3>
-                <p className="text-gray-600">{s.desc}</p>
-                <p className="text-green-700 text-sm font-medium italic mt-2">"{s.quote}"</p>
+                <p className="text-green-700 text-center text-sm font-medium italic mt-4">"{card.quote}"</p>
               </CardContent>
             </Card>
           ))}
         </div>
       </section>
 
-      {/* Image Gallery */}
-      <section className="py-20 bg-green-900">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 text-white">Agricultural Drone Imagery</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {galleryImages.map((image, i) => (
-              <div key={i} className="aspect-video overflow-hidden rounded-lg shadow-lg group">
-                <div className="relative w-full h-full">
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  />
-                  <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                    <p className="text-white text-sm font-medium">{image.title}</p>
-                  </div>
+      {/* Gallery Section */}
+      <section className="py-16 container mx-auto px-4">
+        <h2 className="text-3xl font-bold text-center mb-12 text-gray-800 tracking-tight">Gallery</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {galleryImages.map((image, index) => (
+            <div key={index} className="aspect-video overflow-hidden rounded-lg shadow-md group">
+              <div className="relative w-full h-full">
+                <Image
+                  src={image.src || "/placeholder.svg"}
+                  alt={image.alt}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300" />
+                <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <p className="text-white text-lg font-semibold text-center">{image.title}</p>
                 </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-green-50">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6 text-green-900">Ready to explore our detailed mapping portal?</h2>
-          <p className="text-lg text-green-700 mb-8">
-            Visit our interactive agricultural drone mapping site for comprehensive field analysis and insights
-          </p>
-          <Link
-            href="#"
+      <section className="py-16 container mx-auto px-4 bg-green-50 rounded-lg">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-6 text-green-900 tracking-tight">Client Map Access</h2>
+          <a
+            href="https://cloud1.webodm.net/public/project/79ec4733-fccb-4fb2-8fd0-7f053da179f3/map/?t=orthophoto"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white text-lg px-8 py-6 rounded-lg shadow-lg transition-colors"
+            className="block w-full bg-green-600/70 hover:bg-green-700/80 border border-green-800 hover:shadow-2xl text-black text-lg p-6 rounded-md shadow-lg transition-all font-semibold italic"
           >
-            Your site map link 🗺️ <ArrowRight className="w-5 h-5" />
-          </Link>
+            Ed Udale potato field orthomosaic map – 19th May 2025 – Apley, Telford
+          </a>
         </div>
       </section>
 
-      {/* Testimonial */}
-      <section className="py-20 bg-slate-50">
+      {/* Testimonial Section */}
+      <section className="py-16 bg-slate-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">What The Industry Says</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800 tracking-tight">What The Industry Says</h2>
           <div className="max-w-4xl mx-auto">
-            <Card className="border-green-200 shadow-lg">
-              <CardContent className="py-10 px-6">
+            <Card className="border-green-200 shadow-md">
+              <CardContent className="pt-8 pb-8">
                 <p className="text-gray-600 text-lg italic mb-6 text-center">
-                  "Drone mapping technology is revolutionizing modern agriculture. These aerial systems give farmers
-                  insights into field conditions, crop health, and resource management—enabling precision farming that
-                  boosts yields and reduces environmental impact."
+                  "Drone mapping technology is revolutionizing modern agriculture. These aerial systems provide
+                  unprecedented insights into field conditions and resource management—enabling precision farming
+                  practices that boost yields and reduce environmental impact."
                 </p>
                 <div className="text-center">
                   <p className="font-semibold text-gray-800">Modern Farming Today</p>
@@ -124,35 +153,51 @@ export default function AgricultureDroneLandingPage() {
         </div>
       </section>
 
-      {/* Footer with matched header color scheme */}
-      <footer className="bg-gradient-to-b from-green-100 to-green-50 text-white py-12">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="mb-6 md:mb-0 text-gray-800">
-              <h3 className="text-2xl font-bold mb-2">Agricultural Drone Services</h3>
-              <p className="text-green-900">Professional UAV mapping and surveying in the UK</p>
-            </div>
-            <div className="text-center md:text-right text-gray-800">
-              <p className="mb-2">Email: droneonthefarm@outlook.com</p>
-              <p className="mb-2">YouTube: @jonnywipeout</p>
-              <p>Mobile: 07771190394</p>
-              <div className="mt-4">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-green-700 hover:text-green-600 transition"
-                >
-                  Your site map link 🗺️ →
-                </a>
-              </div>
+      {/* Footer + Contact Form */}
+      <footer className="bg-slate-800 text-white py-16 mt-16">
+        <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12">
+          <div>
+            <h3 className="text-2xl font-bold mb-3">Droneonthefarm</h3>
+            <p className="text-slate-300 text-sm mb-4">Professional UAV mapping and surveying in the UK using drone technology for agriculture and construction.</p>
+            <div className="flex flex-col gap-3">
+              <a href="mailto:droneonthefarm@outlook.com" className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md text-sm font-medium w-fit">
+                <Mail className="w-4 h-4" /> droneonthefarm@outlook.com
+              </a>
+              <a href="https://www.youtube.com/@jonnywipeout" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md text-sm font-medium w-fit">
+                <Youtube className="w-4 h-4" /> Watch on YouTube
+              </a>
+              <p className="text-sm text-slate-400 mt-2">Mobile: 07771190394</p>
             </div>
           </div>
-          <div className="mt-8 pt-8 border-t border-green-200 text-center text-green-800 text-sm">
-            <p>© {new Date().getFullYear()} Agricultural Drone Services. All rights reserved.</p>
+
+          <div>
+            <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
+            <form className="flex flex-col gap-4">
+              <input
+                type="text"
+                placeholder="Your Name"
+                className="px-4 py-2 rounded-md bg-slate-700 text-white placeholder-slate-400 border border-slate-600 focus:outline-none focus:ring-2 focus:ring-green-400"
+              />
+              <input
+                type="email"
+                placeholder="Your Email"
+                className="px-4 py-2 rounded-md bg-slate-700 text-white placeholder-slate-400 border border-slate-600 focus:outline-none focus:ring-2 focus:ring-green-400"
+              />
+              <textarea
+                rows={4}
+                placeholder="Your Message"
+                className="px-4 py-2 rounded-md bg-slate-700 text-white placeholder-slate-400 border border-slate-600 focus:outline-none focus:ring-2 focus:ring-green-400"
+              ></textarea>
+              <button
+                type="submit"
+                className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-md font-medium w-fit"
+              >
+                Send Message
+              </button>
+            </form>
           </div>
         </div>
       </footer>
     </div>
-  );
+  )
 }
