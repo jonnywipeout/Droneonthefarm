@@ -30,17 +30,17 @@ export default function AgricultureDroneLandingPage() {
             alt="Agricultural drone surveying landscape"
             fill
             className="object-cover"
-            style={{ filter: "brightness(0.7)" }}
+            style={{ filter: "brightness(0.85)" }} // <- Lightened background
             priority
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/40" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/10" /> {/* <- Lightened overlay */}
         <div className="relative z-10 container mx-auto h-full flex flex-col justify-center items-center text-center px-4">
-          <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow-xl p-8 max-w-3xl text-white">
-            <h1 className={`${playfair.className} text-5xl md:text-6xl font-semibold tracking-wide mb-3 drop-shadow-lg`}>
+          <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow-xl px-8 py-10 max-w-3xl text-white">
+            <h1 className={`${playfair.className} text-5xl md:text-6xl font-semibold tracking-wide mb-4 drop-shadow-lg`}>
               Drone on the farm
             </h1>
-            <p className="text-xl md:text-2xl italic font-light text-green-100 drop-shadow-sm">
+            <p className="text-2xl md:text-[1.7rem] italic font-light text-green-100 drop-shadow-sm mt-2">
               Aerial Mapping Services for Farms and Construction Sites
             </p>
           </div>
